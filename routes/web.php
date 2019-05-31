@@ -6,11 +6,6 @@ Route::group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix' => 'adm
 
 Route::get('/', 'SiteController@index')->name('home');
 
-Route::get('/config-cache', function() {
-    Artisan::call('config:cache');
-    return '<h1>Config cache cleared successfully</h1>';
-});
-
 Auth::routes();
 
 
