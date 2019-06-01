@@ -79,11 +79,11 @@
 }
 .skin-purple-light .sidebar-menu > li > a {
   border-left: 3px solid transparent;
-  font-weight: 600;
+  font-weight: 500;
 }
 .skin-purple-light .sidebar-menu > li:hover > a,
 .skin-purple-light .sidebar-menu > li.active > a {
-  color: #000000;
+  color: #333;
   background: #f4f4f5;
 }
 .skin-purple-light .sidebar-menu > li.active {
@@ -96,7 +96,7 @@
   background: #f4f4f5;
 }
 .skin-purple-light .sidebar a {
-  color: #444444;
+  color: #777;
 }
 .skin-purple-light .sidebar a:hover {
   text-decoration: none;
