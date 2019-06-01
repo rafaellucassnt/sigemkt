@@ -197,7 +197,7 @@ return [
         [
             'text'        => 'Dashboard',
             'url'         => 'admin',
-            'icon'        => 'dashboard',
+            'icon'        => 'tachometer-alt',
         ],
         [
             'text'        => 'Financeiro',
