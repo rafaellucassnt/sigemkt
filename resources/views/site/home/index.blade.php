@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    SIGE Marketing e Vendas
                 </div>
 
                 <div class="links">
