@@ -67,7 +67,7 @@
     <div class="filter"></div>
     <div class="container space-nav">
       <div class="motto title-brand">
-        <h2 class="presentation-subtitle">SIGE Markentig e Vendas</h2>
+        <h2 class="presentation-subtitle">SIGE Marketing e Vendas</h2>
         <br/>
       
       </div>

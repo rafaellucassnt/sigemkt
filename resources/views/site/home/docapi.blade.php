@@ -71,7 +71,7 @@
     <div class="filter"></div>
     <div class="container space-nav">
       <div class="motto title-brand">
-        <h2 class="presentation-subtitle">Guia API Markentig e Vendas</h2>
+        <h2 class="presentation-subtitle">Guia API Marketing e Vendas</h2>
         <br/>
       
       </div>
