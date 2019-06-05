@@ -209,7 +209,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a href="http://35.224.189.192/api/campanhas">http://35.224.189.192/api/campanhas</td>
+                                <td><a href="/api/campanhas">http://sigemv.ml/api/campanhas</td>
                                 <td><p>Campanhas</p></td>
                                 <td><p>'ID'</p>
                                     <p>'DATA_INICIO'</p>
@@ -221,7 +221,7 @@
                                 <td>GET</td>
                             </tr>
                                 <tr>
-                                    <td><a href="http://35.224.189.192/api/melhoriacontinuas">http://35.224.189.192/api/melhoriacontinuas</td>
+                                    <td><a href="/api/melhoriacontinuas">http://sigemv.ml/api/melhoriacontinuas</td>
                                 <td><p>Melhoria Contínua</p></td>
                                 <td><p>'ID'</p>
                                     <p>'COD_PROD'</p>
@@ -233,7 +233,7 @@
                                 <td>GET</td>
                             </tr>
                                 <tr>
-                                    <td><a href="http://35.224.189.192/api/analisevendas">http://35.224.189.192/api/analisevendas</td>
+                                    <td><a href="/api/analisevendas">http://sigemv.ml/api/analisevendas</td>
                                 <td><p>Análise de Vendas</p></td>
                                 <td><p>'ID'</p>
                                     <p>'COD_PROD'</p>
@@ -245,7 +245,7 @@
                                 <td>GET</td>
                            {{-- </tr>
                                 <tr>
-                                    <td><a href="http://35.224.189.192/api/vendas">http://35.224.189.192/api/vendas</td>
+                                    <td><a href="api/vendas">http://sigemv.ml/api/vendas</td>
                                 <td><p>Vendas</p></td>
                                 <td><p>'ID'</p>
                                     <p>'COD_PROD'</p>
@@ -257,7 +257,7 @@
                                 <td>GET</td>
                             </tr>--}}
                                 <tr>
-                                    <td><a href="http://35.224.189.192/api/integracoes">http://35.224.189.192/api/integracoes</td>
+                                    <td><a href="api/integracoes">http://sigemv.ml/api/integracoes</td>
                                 <td><p>Integração</p></td>
                                 <td><p>'ID'</p>
                                     <p>'PROD_MAIS_VEND'</p>
