@@ -28,7 +28,7 @@ class CampanhaController extends Controller
     {
     	$campanha = $this->campanha->find($ID);
 
-    	if(! $campanha) return response()->json(ApiError::errorMessage('Campanha não encontrado!', 4040), 404);
+    	if(! $campanha) return response()->json(ApiError::errorMessage('Recurso não encontrado!', 4040), 404);
 
     	$data = ['data' => $campanha];
 	    return response()->json($data);
@@ -41,7 +41,7 @@ class CampanhaController extends Controller
 			$campanhaData = $request->all();
 			$this->campanha->create($campanhaData);
 
-			$return = ['data' => ['msg' => 'Campanha criado com sucesso!']];
+			$return = ['data' => ['msg' => 'Recurso criado com sucesso!']];
 			return response()->json($return, 201);
 
 		} catch (\Exception $e) {

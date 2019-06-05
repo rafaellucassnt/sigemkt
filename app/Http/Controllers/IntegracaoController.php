@@ -44,11 +44,11 @@ class IntegracaoController extends Controller
 			$return = ['data' => ['msg' => 'Integração criado com sucesso!']];
 			return response()->json($return, 201);
 
-		} catch (\Exception $e) {
-			if(config('app.debug')) {
-				return response()->json(ApiError::errorMessage($e->getMessage(), 1010), 500);
+			} catch (\Exception $e) {
+				if(config('app.debug')) {
+					return response()->json(ApiError::errorMessage($e->getMessage(), 1010), 500);
+				}
+				return response()->json(ApiError::errorMessage('Houve um erro ao realizar operação de salvar', 1010),  500);
 			}
-			return response()->json(ApiError::errorMessage('Houve um erro ao realizar operação de salvar', 1010),  500);
-		}
     }
 }

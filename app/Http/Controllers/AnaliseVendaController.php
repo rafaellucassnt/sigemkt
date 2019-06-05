@@ -28,7 +28,7 @@ class AnaliseVendaController extends Controller
     {
     	$analisevenda = $this->analisevenda->find($ID);
 
-    	if(! $analisevenda) return response()->json(ApiError::errorMessage('AnaliseVenda não encontrado!', 4040), 404);
+    	if(! $analisevenda) return response()->json(ApiError::errorMessage('Recurso não encontrado!', 4040), 404);
 
     	$data = ['data' => $analisevenda];
 	    return response()->json($data);
@@ -41,7 +41,7 @@ class AnaliseVendaController extends Controller
 			$analisevendaData = $request->all();
 			$this->analisevenda->create($analisevendaData);
 
-			$return = ['data' => ['msg' => 'AnaliseVenda criado com sucesso!']];
+			$return = ['data' => ['msg' => 'Recurso criado com sucesso!']];
 			return response()->json($return, 201);
 
 		} catch (\Exception $e) {

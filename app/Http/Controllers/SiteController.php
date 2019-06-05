@@ -10,4 +10,9 @@ class SiteController extends Controller
     {
         return view('site.home.index');
     }
+
+    public function docApi()
+    {
+        return view('site.home.docapi');
+    }
 }

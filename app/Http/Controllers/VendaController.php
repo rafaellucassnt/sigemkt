@@ -28,7 +28,7 @@ class VendaController extends Controller
     {
     	$venda = $this->venda->find($ID);
 
-    	if(! $venda) return response()->json(ApiError::errorMessage('Venda não encontrado!', 4040), 404);
+    	if(! $venda) return response()->json(ApiError::errorMessage('Recurso não encontrado!', 4040), 404);
 
     	$data = ['data' => $venda];
 	    return response()->json($data);
@@ -41,7 +41,7 @@ class VendaController extends Controller
 			$vendaData = $request->all();
 			$this->venda->create($vendaData);
 
-			$return = ['data' => ['msg' => 'Venda criado com sucesso!']];
+			$return = ['data' => ['msg' => 'Recurso criado com sucesso!']];
 			return response()->json($return, 201);
 
 		} catch (\Exception $e) {

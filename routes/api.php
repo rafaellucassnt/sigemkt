@@ -38,11 +38,11 @@ Route::name('api.')->group(function(){
 		Route::get('/{id}', 'AnaliseVendaController@show')->name('single_analisevenda');
     });
     
-    Route::prefix('vendas')->group(function(){
+    /*Route::prefix('vendas')->group(function(){
 		Route::get('/', 'VendaController@index')->name('index_venda');
 		Route::get('/{id}', 'VendaController@show')->name('single_venda');
 		Route::post('/', 'VendaController@store')->name('store_venda');
-	});
+	});*/
 
 	Route::prefix('integracoes')->group(function(){
 		Route::get('/', 'IntegracaoController@index')->name('index_integracoes');

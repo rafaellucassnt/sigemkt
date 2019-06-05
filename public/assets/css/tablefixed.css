@@ -1,0 +1,108 @@
+/* Copyright © 2019 HiveSys. Todos os Direitos Reservados.
+Fix Column/Row Headers
+Author: HiveSys
+Website: HiveSys - http://hivesys.com.br/ */
+
+.table-scroll {
+	position:relative;
+	max-width:auto;
+	margin:auto;
+	overflow:auto;
+}
+
+/*telas do Balanço, DRE, Fluxo de caixa, e Eficiência Operacional e telas com tabelas sem graficos*/
+.table-wrap-noGraph {
+    width:100%;
+    height:37.5vw;
+    overflow:auto;
+}
+
+/*telas de resultado e telas que existem gráficos junto com as tabelas*/
+.table-wrap {
+  width:100%;
+  margin-bottom: 25px;
+  overflow:auto;
+}
+
+.table-scroll table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+.table-scroll th, .table-scroll td {
+	padding:5px 10px;
+	white-space:nowrap;
+	vertical-align:top;
+}
+
+/* MANTÉM O CABEÇALHO DE CADA COLUNA FIXO */
+thead th{
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  background-color: #d7d7d7;
+  font-weight: normal;
+  text-align: center;
+      
+}
+
+/* ESPAÇO PARA QUE O HEADER DA COLUNA NAO SE MISTURE COM O DA LINHA */
+thead th:first-child {
+  left: 0;
+  z-index: 1;
+}
+
+/* MANTÉM O CABEÇALHO DE CADA LINHA FIXO */
+tbody th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+  background: #FFF;
+  font-weight: normal;
+ 
+}
+
+.fixed-side{
+ border-right: 1px solid rgba(54, 53, 53, 0.445)
+}
+
+/****************************************************
+  USADO NAS TABELAS DINAMICAS NA TELAS:
+    - NOVO BALANÇO CONTÁBIL
+    - NOVO BALANÇO RECLASSIFICADO
+    - NOVA DEMOSTAÇÃO DO RESULTADO
+****************************************************/
+
+/* MANTÉM O CABEÇALHO DE CADA COLUNA FIXO */
+.tableHead th{
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  background-color: #d7d7d7;
+  font-weight: normal;
+  text-align: center;
+      
+  }
+
+  /* ESPAÇO PARA QUE O HEADER DA COLUNA NAO SE MISTURE COM O DA LINHA */
+  .tableHead th:first-child {
+  left: 0;
+  z-index: 1;
+  }
+
+  /* MANTÉM O CABEÇALHO DE CADA LINHA FIXO */
+  .fixedCont {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+  background: #FFF;
+  font-weight: normal;
+  }
+
+  .fixedTotalize {
+      position: -webkit-sticky; /* for Safari */
+      position: sticky;
+      left: 0;
+      font-weight: normal;
+  }

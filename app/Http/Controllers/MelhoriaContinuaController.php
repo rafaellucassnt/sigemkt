@@ -28,7 +28,7 @@ class MelhoriaContinuaController extends Controller
     {
     	$melhoriacontinua = $this->melhoriacontinua->find($ID);
 
-    	if(! $melhoriacontinua) return response()->json(ApiError::errorMessage('MelhoriaContinua não encontrado!', 4040), 404);
+    	if(! $melhoriacontinua) return response()->json(ApiError::errorMessage('Recurso não encontrado!', 4040), 404);
 
     	$data = ['data' => $melhoriacontinua];
 	    return response()->json($data);
@@ -41,7 +41,7 @@ class MelhoriaContinuaController extends Controller
 			$melhoriacontinuaData = $request->all();
 			$this->melhoriacontinua->create($melhoriacontinuaData);
 
-			$return = ['data' => ['msg' => 'MelhoriaContinua criado com sucesso!']];
+			$return = ['data' => ['msg' => 'Recurso criado com sucesso!']];
 			return response()->json($return, 201);
 
 		} catch (\Exception $e) {

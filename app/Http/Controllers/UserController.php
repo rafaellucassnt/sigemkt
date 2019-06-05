@@ -29,7 +29,7 @@ class UserController extends Controller
     {
     	$user = $this->user->find($id);
 
-    	if(! $user) return response()->json(ApiError::errorMessage('Usuário não encontrado!', 4040), 404);
+    	if(! $user) return response()->json(ApiError::errorMessage('Recurso não encontrado!', 4040), 404);
 
     	$data = ['data' => $user];
 	    return response()->json($data);
@@ -42,7 +42,7 @@ class UserController extends Controller
 			$userData = $request->all();
 			$this->user->create($userData);
 
-			$return = ['data' => ['msg' => 'Usuário criado com sucesso!']];
+			$return = ['data' => ['msg' => 'Recurso criado com sucesso!']];
 			return response()->json($return, 201);
 
 		} catch (\Exception $e) {

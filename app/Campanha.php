@@ -8,9 +8,10 @@ class Campanha extends Model
 {
     protected $fillable = [
         'ID',
-        'ID_CAMPANHA', 
-        'DATA_CAMPANHA', 
+        'DATA_INICIO', 
+        'DATA_TERMINO', 
         'MIDIA', 
         'FINALIZADA',
+        'VARIAÇÃO_DE_VENDAS',
     ];
 }

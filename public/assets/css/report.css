@@ -1,0 +1,115 @@
+@page {
+    margin: 15px 15px 70px 15px;
+}
+
+body {
+    font-family: Nunito, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+header {
+    position: fixed;
+    height: 120px;
+    border-bottom: 1px solid #000;
+    /* background-color: blue; */
+}
+
+header .dados {
+    font-size: 30px;
+    padding-left: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+main {
+    position: relative;
+    top: 110px;
+    height: 550px;
+    /* background-color: green; */
+}
+
+footer {
+    position: fixed;
+    bottom: -60px;
+    /* background-color: yellow; */
+    height: 30px;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+footer .pagina {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+footer .data {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+footer .pagenumber:before {
+    content: counter(page);
+}
+
+footer .pagecount:before {
+    content: counter(pages);
+}
+
+.page-break {
+    page-break-after: always;
+}
+
+h2 {
+    text-align: center;
+    color: #931A1D;
+}
+
+h3 {
+    text-align: center;
+    color: #3a5f9b;
+}
+
+
+/* 
+/* Formatação das tabelas
+*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela thead {
+    background-color: #bfbfbf;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+tbody {
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+tr.border_bottom td {
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    border-bottom-color: #b2b2b2;
+}
+
+tbody .valor {
+    text-align: center;
+}
+
+tbody .label {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
