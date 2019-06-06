@@ -15,5 +15,6 @@ class Integracao extends Model
         'CUSTO_CAMPANHA', 
         'VALOR_GASTO', 
         'VALOR_PREVISTO',
+        'QNT_VENDIDO',
     ];
 }

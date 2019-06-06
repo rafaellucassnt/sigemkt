@@ -262,7 +262,8 @@
                                     <p>'NOME_PROMOCAO'</p>
                                     <p>'CUSTO_CAMPANHA'</p>
                                     <p>'VALOR_GASTO'</p>
-                                    <p>'VALOR_PREVISTO'</p></td>
+                                    <p>'VALOR_PREVISTO'</p>
+                                    <p>'QNT_VENDIDO'</p></td>
                                 <td>GET</td>
                             </tr>
                         </tbody>
