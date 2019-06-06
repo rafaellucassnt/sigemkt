@@ -33,10 +33,10 @@ Route::name('api.')->group(function(){
 		Route::get('/{id}', 'MelhoriaContinuaController@show')->name('single_melhoriacontinua');
     });
 
-    Route::prefix('analisevendas')->group(function(){
+    /*Route::prefix('analisevendas')->group(function(){
 		Route::get('/', 'AnaliseVendaController@index')->name('index_analisevenda');
 		Route::get('/{id}', 'AnaliseVendaController@show')->name('single_analisevenda');
-    });
+    });*/
     
     /*Route::prefix('vendas')->group(function(){
 		Route::get('/', 'VendaController@index')->name('index_venda');

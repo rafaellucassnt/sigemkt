@@ -4,12 +4,28 @@
 
 @section('content_header')
     <h1>Dashboard</h1>
+    @section('content')
+    <style>
+            .frame{
+                position: relative;
+                width: 200vw;
+                height: 100vh;
+                overflow: hidden;
+            }
+        iframe {
+            position: relative;            
+            top: 0px;
+            left: 0px;
+            width: 1024px;
+            height: 768px;
+        }
+    </style>
 @stop
 
-@section('content')
-    <p></p>
+
 
     <div class="row">
+        
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
             <span class="info-box-icon bg-green"><i class="ion ion-cash"></i></span>
@@ -87,7 +103,15 @@
           <div id="chart7"></div>
         </div>
     </div>
-
+    <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+    <div class="frame">
+            <iframe src="https://sigemarketingevendas.herokuapp.com/" frameborder="no"></iframe>
+        </div>
+    </div>
+    </div>
+</div>
 
     @endsection
 @push('other_js')

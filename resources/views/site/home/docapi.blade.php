@@ -224,14 +224,11 @@
                                     <td><a href="/api/melhoriacontinuas">http://sigemv.ml/api/melhoriacontinuas</td>
                                 <td><p>Melhoria Contínua</p></td>
                                 <td><p>'ID'</p>
-                                    <p>'COD_PROD'</p>
-                                    <p>'NOME_PROD'</p>
-                                    <p>'QUANT_VEND_ATUAL'</p>
-                                    <p>'QUANT_VEND_ANTERIOR'</p>
-                                    <p>'VARIACAO_VENDAS'</p>
-                                    <p>'ANUNCIADO'</p></td>
+                                    <p>'COD_MELHORIA'</p>
+                                    <p>'MELHORIA_REQ'</p>
+                                    <p>'AREA_FUNCIONAL'</p>
                                 <td>GET</td>
-                            </tr>
+                           {{--  </tr>
                                 <tr>
                                     <td><a href="/api/analisevendas">http://sigemv.ml/api/analisevendas</td>
                                 <td><p>Análise de Vendas</p></td>
@@ -242,7 +239,7 @@
                                     <p>'QUANT_VEND_ANTERIOR'</p>
                                     <p>'VARIACAO_VENDAS'</p>
                                     <p>'ANUNCIADO'</p></td>
-                                <td>GET</td>
+                                <td>GET</td>--}}
                            {{-- </tr>
                                 <tr>
                                     <td><a href="api/vendas">http://sigemv.ml/api/vendas</td>
