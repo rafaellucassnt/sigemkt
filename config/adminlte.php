@@ -58,7 +58,7 @@ return [
     |
     */
 
-    'layout' => null,
+    'layout' => 'fixed',
 
     /*
     |--------------------------------------------------------------------------
@@ -195,73 +195,13 @@ return [
     'menu' => [
         //'MENU',
         [
-            'text'        => 'Dashboard',
+            'text'        => 'Relatórios',
             'url'         => 'admin',
-            'icon'        => 'tachometer-alt',
-        ],
-        [
-            'text'        => 'Financeiro',
-            'icon'        => 'money',
-            'submenu'     =>[
-                [
-                    'text'        => 'Saldo',
-                    'url'         => 'admin/balance',
-                    'icon'        => 'credit-card-alt',
-                ],
-                [
-                    'text'        => 'Histórico',
-                    'url'         => 'admin/historic',
-                    'icon'        => 'history',
-                ]
-
-            ]
-
-        ],
-        [
-            'text'        => 'Recursos Humanos',
-            'icon'        => 'users',
-            'submenu'     =>[
-                [
-                    'text'        => 'Pessoa',
-                    'url'         => 'admin/user',
-                    'icon'        => 'user',
-                ],
-
-
-            ]
-
-        ],
-        [
-            'text'        => 'Produção',
-            'icon'        => 'hand-stop-o',
-            'submenu'     =>[
-                [
-                    'text'        => 'Produtos',
-                    'url'         => 'admin/produção',
-                    'icon'        => 'hand-stop-o',
-                ],
-
-
-            ]
-
-        ],
-        [
-            'text'        => 'Marketing e Vendas',
-            'icon'        => 'bullhorn ',
-            'submenu'     =>[
-                [
-                    'text'        => 'Marketing',
-                    'url'         => 'admin/produção',
-                    'icon'        => 'bullhorn',
-                ],
-
-
-            ]
-
+            'icon'        => 'chart-pie',
         ],
         [
             'text'        => 'API',
-            'url'         => 'api',
+            'url'         => 'guideapi',
             'icon'        => 'code',
         ],
     ],

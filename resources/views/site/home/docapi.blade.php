@@ -44,18 +44,18 @@
         @if (Route::has('login'))
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-home"></i></i>Home</a>
+                <a href="{{ url('/') }}" class="nav-link"><i class="fas fa-home"></i>Home</a>
             </li>
           @auth
           <li class="nav-item">
-            <a href="{{ url('admin') }}" class="nav-link"><i class="fas fa-tachometer-alt"></i></i>Dashboard</a>
+            <a href="{{ url('admin') }}" class="nav-link"><i class="fas fa-chart-pie"></i>Relatórios</a>
           </li>
           <li class="nav-item">
-                <a href="{{ url('guideapi') }}" class="nav-link"><i class="fa fa-code" aria-hidden="true"></i></i>API</a>
+                <a href="{{ url('guideapi') }}" class="nav-link"><i class="fa fa-code" aria-hidden="true"></i>API</a>
               </li>
           @else 
           <li class="nav-item">
-                <a href="{{ url('guideapi') }}" class="nav-link"><i class="fa fa-code" aria-hidden="true"></i></i>API</a>
+                <a href="{{ url('guideapi') }}" class="nav-link"><i class="fa fa-code" aria-hidden="true"></i>API</a>
               </li>
           <li class="nav-item">
             <a href="{{ url('login') }}" class="nav-link"><i class="fas fa-sign-in-alt"></i>Login</a>
